@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rifah Buying Method</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'inquiry_form' %}">Inquiry Form</a></li>
+                <li><a href="{% url 'appointment_schedule' %}">Appointment Schedule</a></li>
+                <li><a href="{% url 'appraisal_report' %}">Appraisal Report</a></li>
+                <li><a href="{% url 'negotiation' %}">Negotiation</a></li>
+                <li><a href="{% url 'purchase_confirmation' %}">Purchase Confirmation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
